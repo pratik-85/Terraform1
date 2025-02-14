@@ -3,13 +3,12 @@ pipeline {
     stages {
         stage('Pull') {
             steps {
-                git branch: 'main', url: 'https://github.com/rajatpzade/ONCDECB16.git'
+                git branch: 'main', url: 'https://github.com/pratik-85/Terraform1.git'
             }
         }   
         stage('Test') {
             steps {
-                sh '''  cd Terraform1/ 
-                        terraform init
+                sh '''  terraform init
                         terraform plan'''
             }
         }   
