@@ -14,8 +14,7 @@ pipeline {
         }   
         stage('Deploy') {   
             steps {
-                sh '''terraform init
-                      terraform apply --auto-approve'''
+                sh '''terraform apply --auto-approve'''
             }
         }
     }
