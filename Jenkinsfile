@@ -9,7 +9,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh '''  terraform init
-                        terraform plan'''
+                        terraform plan '''
             }
         }   
         stage('Deploy') {   
